@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Dropdown</title>
+
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="" class="navbar-brand">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupported" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a href="#" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item ">
+              <a href="#" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+              <div class="dropdown-menu">
+                  <a href="" class="dropdown-item">Sign In</a>
+                  <a href="" class="dropdown-item">Sign Up</a>
+                  <a href="" class="dropdown-item">Sign Out</a>
+              </div>
+          </li>
+        </ul>
+    </div>
+</nav>
+
+
+    <div class="container">
+        <h1 class="display-3 text-center">Dropdown</h1>
+        <div class="dropdown my-3">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Normal Dropdown</button>
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Home</a>
+                <a href="" class="dropdown-item">About</a>
+                <a href="" class="dropdown-item">Content</a>
+            </div>
+        </div>
+
+        <div class="dropdown my-3">
+            <button class="btn btn-warning btn-lg dropdown-toggle" data-toggle="dropdown">Dropdown Large</button>
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Home</a>
+                <a href="" class="dropdown-item">About</a>
+                <a href="" class="dropdown-item">Content</a>
+            </div>
+        </div>
+
+        <div class="dropup my-3">
+            <button class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown">DropUp/Header</button>
+            <div class="dropdown-menu">
+                <h6 class="dropdown-header">Dropdown Header</h6>
+                <a href="" class="dropdown-item active">Home</a>
+                <a href="" class="dropdown-item">About</a>
+                <a href="" class="dropdown-item disabled">Content</a>
+            </div>
+        </div>
+
+        <div class="dropdown my-3">
+            <button class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">Dropdown Large/Divider</button>
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Home</a>
+                <div class="dropdown-divider"></div>
+                <a href="" class="dropdown-item">About</a>
+                <div class="dropdown-divider"></div>
+                <a href="" class="dropdown-item">Content</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown my-3">
+            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Form Dropdown</button>
+            <div class="dropdown-menu">
+                <form class="px-4 py-3">
+                    <div class="form-group">
+                      <label for="exampleDropdownFormEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleDropdownFormPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </form>
+            </div>
+        </div>
+
+
+        <div class="btn-group">
+            <button type="" class="btn btn-info">Split Button</button>
+            <button type="" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="" data-toggle="dropdown" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Action</a>
+              <a href="#" class="dropdown-item">Another action</a>
+              <a href="#" class="dropdown-item">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">After divider</a>
+            </div>
+          </div>
+
+        
+    </div>
+       
+
+<!-- Js -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
